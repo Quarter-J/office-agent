@@ -1,0 +1,46 @@
+# ============================================================
+# Office Agent 运行依赖
+# 安装：pip install -r requirements.txt
+# （验证环境：Python 3.13，全部已装并跑通端到端）
+# ============================================================
+
+# --- LangChain / LangGraph ---
+langchain-core
+langchain-openai
+langchain-community
+langgraph
+
+# --- 向量检索 ---
+faiss-cpu
+
+# --- 知识库多格式解析 ---
+python-docx
+pypdf
+python-pptx
+openpyxl
+
+# --- 关键词兜底 / 网页搜索 ---
+jieba
+requests
+beautifulsoup4
+
+# --- 配置 / 日志 / 调度 ---
+pydantic
+pydantic-settings
+rich
+apscheduler
+
+# ============================================================
+# 可选依赖（按需安装）
+# ============================================================
+# Web UI（gradio 界面）
+# gradio
+
+# 微信消息通道（Windows 自动化）
+# wxauto
+
+# 记忆系统持久化（留空走内存回退）
+# redis
+
+# 扫描 PDF 的 OCR（仅当 ENABLE_OCR=True 时需要）
+# rapidocr-onnxruntime

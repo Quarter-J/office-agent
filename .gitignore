@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+logs/
+.grok/
+data/db/
+# 示例通讯录，含人名/电话样例行，不随仓库公开
+data/knowledge_base/contacts.md
+data/logs/
+data/reports/
+.DS_Store
+*.log
