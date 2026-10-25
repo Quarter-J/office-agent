@@ -66,9 +66,11 @@ class Settings(BaseSettings):
     # 知识库配置
     # ============================================================
     knowledge_base_dir: str = "./data/knowledge_base"
+    legal_raw_dir: str = "./data/legal/raw"
     embedding_model: str = "text-embedding-3-small"
     embedding_base_url: str = ""  # 嵌入模型 base_url，空则走 OpenAI 默认
     embedding_api_key: str = ""  # 嵌入模型独立 key（如千问/DashScope），空则复用 openai_api_key
+    embedding_batch_size: int = 10  # 单次 embedding 请求的文本条数上限（千问/DashScope 限 10）
     chunk_size: int = 500
     chunk_overlap: int = 50
     similarity_threshold: float = 0.3  # 语义检索相似度阈值，低于则视为未命中
@@ -80,6 +82,11 @@ class Settings(BaseSettings):
     database_path: str = "data/db/office_agent.db"
     action_ledger_path: str = "data/db/action_ledger.db"
     vector_store_path: str = "data/db/vector_store"
+    medical_vector_store_path: str = "data/db/vector_store_medical"
+    medical_corpus_path: str = "data/db/medical_chunks.json"
+    legal_vector_store_path: str = "data/db/vector_store_legal"
+    legal_corpus_path: str = "data/db/legal_chunks.json"
+    legal_chunk_size: int = Field(default=1200, ge=200, le=4000)
 
     # ============================================================
     # 记忆系统配置

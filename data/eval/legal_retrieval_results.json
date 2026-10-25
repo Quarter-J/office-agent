@@ -1,0 +1,193 @@
+{
+  "dataset": "legal_curated_19",
+  "relevance": "title + exact article heading",
+  "recall_definition": "retrieved gold chunks / all gold chunks",
+  "corpus_chunks": 9838,
+  "queries": 19,
+  "vector": {
+    "queries": 19,
+    "hit@1": 0.6842,
+    "recall@1": 0.6842,
+    "hit@3": 0.8947,
+    "recall@3": 0.8947,
+    "hit@5": 0.8947,
+    "recall@5": 0.8947,
+    "hit@10": 0.8947,
+    "recall@10": 0.8947,
+    "hit@20": 0.9474,
+    "recall@20": 0.9474,
+    "mrr": 0.7763,
+    "p95_latency_ms": 208.54,
+    "median_latency_ms": 145.98
+  },
+  "hybrid": {
+    "queries": 19,
+    "hit@1": 0.7368,
+    "recall@1": 0.7368,
+    "hit@3": 0.8421,
+    "recall@3": 0.8421,
+    "hit@5": 0.8421,
+    "recall@5": 0.8421,
+    "hit@10": 0.9474,
+    "recall@10": 0.9474,
+    "hit@20": 0.9474,
+    "recall@20": 0.9474,
+    "mrr": 0.8023,
+    "p95_latency_ms": 488.07,
+    "median_latency_ms": 377.05
+  },
+  "details": [
+    {
+      "query": "劳动合同试用期最长可以约定多久",
+      "title": "中华人民共和国劳动合同法",
+      "article": "第十九条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "劳动者提前多少天通知可以解除劳动合同",
+      "title": "中华人民共和国劳动合同法",
+      "article": "第三十七条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "用人单位应当自用工之日起多久内订立书面劳动合同",
+      "title": "中华人民共和国劳动合同法",
+      "article": "第十条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "劳动合同解除或终止的经济补偿怎么计算",
+      "title": "中华人民共和国劳动合同法",
+      "article": "第四十七条",
+      "gold_chunks": 1,
+      "vector_rank": 2,
+      "hybrid_rank": 2
+    },
+    {
+      "query": "协议离婚的冷静期是多少天",
+      "title": "中华人民共和国民法典",
+      "article": "第一千零七十七条",
+      "gold_chunks": 1,
+      "vector_rank": 2,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "高空抛物造成他人损害由谁承担责任",
+      "title": "中华人民共和国民法典",
+      "article": "第一千二百五十四条",
+      "gold_chunks": 1,
+      "vector_rank": 3,
+      "hybrid_rank": 7
+    },
+    {
+      "query": "普通民事诉讼时效期间是几年",
+      "title": "中华人民共和国民法典",
+      "article": "第一百八十八条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "法定继承的第一顺序继承人包括哪些人",
+      "title": "中华人民共和国民法典",
+      "article": "第一千一百二十七条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "夫妻共同债务如何认定",
+      "title": "中华人民共和国民法典",
+      "article": "第一千零六十四条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "正当防卫造成不法侵害人损害是否负刑事责任",
+      "title": "中华人民共和国刑法",
+      "article": "第二十条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "处理敏感个人信息需要取得什么同意",
+      "title": "中华人民共和国个人信息保护法",
+      "article": "第二十八条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "网络运营者收集使用个人信息应遵循什么原则",
+      "title": "中华人民共和国网络安全法",
+      "article": "第四十一条",
+      "gold_chunks": 1,
+      "vector_rank": null,
+      "hybrid_rank": null
+    },
+    {
+      "query": "网购商品七天无理由退货的条件",
+      "title": "中华人民共和国消费者权益保护法",
+      "article": "第二十五条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "产品存在缺陷造成人身损害由生产者承担什么责任",
+      "title": "中华人民共和国产品质量法",
+      "article": "第四十一条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "机动车第三者责任强制保险制度",
+      "title": "中华人民共和国道路交通安全法",
+      "article": "第十七条",
+      "gold_chunks": 1,
+      "vector_rank": 12,
+      "hybrid_rank": 10
+    },
+    {
+      "query": "有限责任公司股东认缴出资额应在几年内缴足",
+      "title": "中华人民共和国公司法",
+      "article": "第四十七条",
+      "gold_chunks": 1,
+      "vector_rank": 3,
+      "hybrid_rank": 2
+    },
+    {
+      "query": "行政处罚听证的适用范围",
+      "title": "中华人民共和国行政处罚法",
+      "article": "第六十三条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "申请行政复议的期限是多久",
+      "title": "中华人民共和国行政复议法",
+      "article": "第二十条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    },
+    {
+      "query": "哪些情形应当认定为工伤",
+      "title": "工伤保险条例",
+      "article": "第十四条",
+      "gold_chunks": 1,
+      "vector_rank": 1,
+      "hybrid_rank": 1
+    }
+  ]
+}

@@ -18,6 +18,7 @@ python-docx
 pypdf
 python-pptx
 openpyxl
+pyyaml
 
 # --- 关键词兜底 / 网页搜索 ---
 jieba

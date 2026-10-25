@@ -12,5 +12,7 @@ data/db/
 data/knowledge_base/contacts.md
 data/logs/
 data/reports/
+.tmp/
+output/
 .DS_Store
 *.log

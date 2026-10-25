@@ -41,6 +41,8 @@ def get_embeddings():
                     check_embedding_ctx_length=False,
                     request_timeout=settings.embedding_timeout_seconds,
                     max_retries=0,
+                    # 千问/DashScope embedding 单次批量上限 10，超过会 400
+                    chunk_size=settings.embedding_batch_size,
                 )
                 if settings.embedding_base_url:
                     kwargs["openai_api_base"] = settings.embedding_base_url
@@ -52,14 +54,14 @@ def _vector_path() -> Path:
     return Path(settings.vector_store_path)
 
 
-def build_index(chunks, save: bool = True) -> bool:
-    """全量构建并保存 FAISS 索引"""
+def build_index(chunks, save: bool = True, save_dir: str = None) -> bool:
+    """全量构建并保存 FAISS 索引（save_dir 可指定独立目录，默认用配置路径）"""
     from langchain_community.vectorstores import FAISS
     texts = [c.text for c in chunks]
     metadatas = [c.meta for c in chunks]
     store = FAISS.from_texts(texts, get_embeddings(), metadatas=metadatas)
     if save:
-        path = _vector_path()
+        path = Path(save_dir) if save_dir else _vector_path()
         path.mkdir(parents=True, exist_ok=True)
         store.save_local(str(path))
         logger.info(f"FAISS 索引已构建: {len(texts)} 块 -> {path}")

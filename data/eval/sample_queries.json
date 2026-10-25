@@ -1,0 +1,5 @@
+[
+  {"query": "Spring Boot 自动装配怎么配置", "relevant": ["spring_boot.md"]},
+  {"query": "应用配置文件 application.yml 用来做什么", "relevant": ["spring_boot.md"]},
+  {"query": "如何快速创建一个 Spring Boot 项目", "relevant": ["spring_boot.md"]}
+]
